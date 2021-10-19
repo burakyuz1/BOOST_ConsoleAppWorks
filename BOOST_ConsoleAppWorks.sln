@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04KararYapilari-SwitchMevsi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05KararYapilari-GununSozu", "05KararYapilari-GununSozu\05KararYapilari-GununSozu.csproj", "{A01D2B64-9502-4774-98FE-26AF84131B3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06WFP-TekMiCiftMi", "06WFP-TekMiCiftMi\06WFP-TekMiCiftMi.csproj", "{84CE219F-8C01-4D59-A173-C17EA37DAEC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +87,10 @@ Global
 		{A01D2B64-9502-4774-98FE-26AF84131B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A01D2B64-9502-4774-98FE-26AF84131B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A01D2B64-9502-4774-98FE-26AF84131B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CE219F-8C01-4D59-A173-C17EA37DAEC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CE219F-8C01-4D59-A173-C17EA37DAEC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CE219F-8C01-4D59-A173-C17EA37DAEC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CE219F-8C01-4D59-A173-C17EA37DAEC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -101,6 +107,7 @@ Global
 		{51C85BA0-9795-433C-A640-3FED9CE8DA6B} = {C40EDBE4-827A-4890-A481-15D9536DC1D7}
 		{AE05442A-AED6-43FE-9759-97478C17D62E} = {C40EDBE4-827A-4890-A481-15D9536DC1D7}
 		{A01D2B64-9502-4774-98FE-26AF84131B3E} = {C40EDBE4-827A-4890-A481-15D9536DC1D7}
+		{84CE219F-8C01-4D59-A173-C17EA37DAEC0} = {C40EDBE4-827A-4890-A481-15D9536DC1D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47B4F320-1255-4673-BE86-9320C40C0058}
