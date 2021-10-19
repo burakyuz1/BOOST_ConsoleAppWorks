@@ -82,13 +82,16 @@ namespace Enviroment_Example
             //c + 273.15 -> Celsius to Kelvin
             Console.WriteLine($"Kelvin : {degree + 273.15}");
             Console.WriteLine($"Fahrenheit : {degree * 1.8 + 32}");
-          
 
 
+            //Kullanıcıdan alınan 2 değeri yerlerini değiştirerek ekrana yazdırınız 
 
+            Console.Write("Birşey gir: ");
+            string data1 = Console.ReadLine();
+            Console.Write("Birşey daha gir: ");
+            string data2 = Console.ReadLine();
 
-
-
+            Console.WriteLine($"{data2}{data1}");
 
             Console.ReadKey();
 
