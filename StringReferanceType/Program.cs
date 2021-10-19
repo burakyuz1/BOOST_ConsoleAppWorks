@@ -10,6 +10,7 @@ namespace StringReferansTipi
     {
         static void Main(string[] args)
         {
+            //strings
             string metin1 = "Lorem ipsum dolor sit amet, concestetur adipiscing elit.";
             string metin2 = "Ankara";
 
