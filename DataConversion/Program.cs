@@ -32,7 +32,7 @@ namespace DataConversion
             decimal i = (decimal)h;
 
             decimal j = 3.3m;
-            double k = j;
+            double k = (double)j;
 
             Console.WriteLine((char)65.99);
             //explicit conversion-veri kaybı
