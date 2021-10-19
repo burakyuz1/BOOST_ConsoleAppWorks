@@ -90,8 +90,12 @@ namespace Enviroment_Example
             string data1 = Console.ReadLine();
             Console.Write("Birşey daha gir: ");
             string data2 = Console.ReadLine();
+            string temp;
+            temp = data1;
+            data1 = data2;            
+            data2 = temp;
 
-            Console.WriteLine($"{data2}{data1}");
+            Console.WriteLine($"{data1} {data2}");
 
             Console.ReadKey();
 
