@@ -59,6 +59,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01AtYarisi", "01AtYarisi\01
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02RGBColors", "02RGBColors\02RGBColors.csproj", "{D58C8C8A-A5D1-44EC-B9C0-48F6B9AB5C08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03VehicleTaxCalculation", "03VehicleTaxCalculation\03VehicleTaxCalculation.csproj", "{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -157,6 +159,10 @@ Global
 		{D58C8C8A-A5D1-44EC-B9C0-48F6B9AB5C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D58C8C8A-A5D1-44EC-B9C0-48F6B9AB5C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D58C8C8A-A5D1-44EC-B9C0-48F6B9AB5C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -185,6 +191,7 @@ Global
 		{231578AE-5FAF-492A-84D4-219F7304B055} = {5B9AC1EC-12C4-4F15-B805-1B0C1C430611}
 		{C4FE68F2-49B6-4881-8490-74B14BA0CDA9} = {533F3FE9-CB83-4558-838D-B69A35749CF1}
 		{D58C8C8A-A5D1-44EC-B9C0-48F6B9AB5C08} = {533F3FE9-CB83-4558-838D-B69A35749CF1}
+		{6DD7B829-DA93-4B9D-9D99-7C1F2AAD18DE} = {533F3FE9-CB83-4558-838D-B69A35749CF1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47B4F320-1255-4673-BE86-9320C40C0058}
