@@ -18,7 +18,7 @@ namespace _03VehicleTaxCalculation
         }
 
         double fiyat = 0;
-        private void btnHesapla_Click(object sender, EventArgs e) //////////////BURA
+        private void btnHesapla_Click(object sender, EventArgs e) 
         {
             #region Radio Button Kontrol
             if (rdBinek.Checked == true)
