@@ -37,7 +37,7 @@ namespace _03VehicleTaxCalculation
             {
                 fiyat *= 1.75;
             }
-            else if (nmuYas.Value < 7)
+            else if (nmuYas.Value <= 7)
             {
                 fiyat *= 1.50;
             }
