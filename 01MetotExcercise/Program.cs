@@ -25,5 +25,6 @@ namespace _01MetotExcercise
         {
             Console.WriteLine(sayi1 + sayi2 + sayi3 + sayi4);
         }
+     
     }
 }
