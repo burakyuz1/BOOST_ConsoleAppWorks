@@ -26,7 +26,7 @@ namespace _05OutKeyWords
             s1 = v1 + v2;
             s2 = v1 * v2;
             s3 = v1 / v2;
-            s4 = v1 - v2; // yoruma alırsan hatayı görürsün, değer atamak zorundasın.
+            s4 = v1 - s1; // yoruma alırsan hatayı görürsün, değer atamak zorundasın.
 
         }
     }
