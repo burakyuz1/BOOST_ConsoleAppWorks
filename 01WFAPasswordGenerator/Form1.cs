@@ -43,7 +43,6 @@ namespace _01WFAPasswordGenerator
 
         private void btnUret_Click(object sender, EventArgs e)
         {
-
             rtbSifreAlani.Text = "";
             kucukHarfVarMi = cbKucukHarf.Checked;
             buyukHarfVarMi = cbBuyukHarf.Checked;
@@ -53,9 +52,8 @@ namespace _01WFAPasswordGenerator
             sifreSayisi = (int)nmuSifreAdedi.Value;
 
             if (!(kucukHarfVarMi || buyukHarfVarMi || rakamVarMi || ozelKarakterVarMi))
-            {
                 MessageBox.Show("parametre seç");
-            }
+            
             string selectedChars = "";
 
             Uret(ref selectedChars, kucukHarfVarMi, 'a', 'z');
@@ -74,9 +72,7 @@ namespace _01WFAPasswordGenerator
             {
                 string sifre = "";
                 for (int j = 0; j < sifreUzunlugu; j++)
-                {
                     sifre += selectedChar[rnd.Next(selectedChar.Length)];
-                }
                 tamSifre += sifre + "\n";
             }
             return tamSifre;
@@ -87,11 +83,7 @@ namespace _01WFAPasswordGenerator
             {
                 for (char i = baslangic; i <= bitis; i++)
                     selectedChar += i;
-
-
             }
-
-
         }
     }
 }
