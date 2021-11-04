@@ -179,6 +179,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04OOPProperties", "04OOPPro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05TelefonRehberi", "05TelefonRehberi\05TelefonRehberi.csproj", "{92DDDF82-E116-4955-8D34-530B7D0D941B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06JSONDeseriailizeSerialize", "06JSONDeseriailizeSerialize\06JSONDeseriailizeSerialize.csproj", "{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -489,6 +491,10 @@ Global
 		{92DDDF82-E116-4955-8D34-530B7D0D941B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92DDDF82-E116-4955-8D34-530B7D0D941B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92DDDF82-E116-4955-8D34-530B7D0D941B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -570,6 +576,7 @@ Global
 		{D7F80922-9217-42D6-8D41-6CEB4BFDD7CF} = {972230EB-91B5-455D-AF16-41A76FBAF8A4}
 		{989EEDFD-DECA-4406-A9BD-38889035FFB2} = {972230EB-91B5-455D-AF16-41A76FBAF8A4}
 		{92DDDF82-E116-4955-8D34-530B7D0D941B} = {972230EB-91B5-455D-AF16-41A76FBAF8A4}
+		{75A699B6-16BF-4FF9-A05B-F1384C5C8ACE} = {972230EB-91B5-455D-AF16-41A76FBAF8A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47B4F320-1255-4673-BE86-9320C40C0058}

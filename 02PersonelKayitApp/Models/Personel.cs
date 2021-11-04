@@ -12,12 +12,8 @@ namespace _02PersonelKayitApp.Models
         public string TcNO { get; set; }
         public bool Cinsiyet { get; set; }
         public DateTime DogumTarihi { get; set; }
-        public int Yas { get; set; }
+        public int Yas { get { return DateTime.Now.Year - DogumTarihi.Year; } }
         public string Birim { get; set; }
-        public void YasHesapla()
-        {
-            Yas = DateTime.Now.Year - DogumTarihi.Year;
-        }
         public string PersonelBilgileriniGetir()
         {
             string cinsiyet = Cinsiyet == true ? "Erkek" : "Kadın";

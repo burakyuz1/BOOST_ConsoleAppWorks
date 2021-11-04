@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnTemizle = new System.Windows.Forms.Button();
             this.rdoKadin = new System.Windows.Forms.RadioButton();
             this.rdoErkek = new System.Windows.Forms.RadioButton();
             this.btnKaydet = new System.Windows.Forms.Button();
@@ -44,15 +45,22 @@
             this.txtAdSoyad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnShow = new System.Windows.Forms.Button();
+            this.lblKayitGoruntule = new System.Windows.Forms.Label();
+            this.lblKayitSayisi = new System.Windows.Forms.Label();
+            this.nmuKayitNo = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmuKayitNo)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.groupBox1.Controls.Add(this.btnTemizle);
             this.groupBox1.Controls.Add(this.rdoKadin);
             this.groupBox1.Controls.Add(this.rdoErkek);
             this.groupBox1.Controls.Add(this.btnKaydet);
@@ -75,6 +83,19 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "PERSONEL KAYIT";
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTemizle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTemizle.Location = new System.Drawing.Point(219, 294);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(66, 59);
+            this.btnTemizle.TabIndex = 22;
+            this.btnTemizle.Text = "CLEAR";
+            this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
             // 
             // rdoKadin
             // 
@@ -118,8 +139,9 @@
             this.lblYas.Location = new System.Drawing.Point(130, 314);
             this.lblYas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYas.Name = "lblYas";
-            this.lblYas.Size = new System.Drawing.Size(0, 19);
+            this.lblYas.Size = new System.Drawing.Size(17, 19);
             this.lblYas.TabIndex = 18;
+            this.lblYas.Text = "?";
             // 
             // label6
             // 
@@ -212,7 +234,12 @@
             // groupBox2
             // 
             this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.btnShow);
+            this.groupBox2.Controls.Add(this.lblKayitGoruntule);
+            this.groupBox2.Controls.Add(this.lblKayitSayisi);
+            this.groupBox2.Controls.Add(this.nmuKayitNo);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Location = new System.Drawing.Point(424, -2);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
@@ -222,13 +249,61 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "PERSONEL BİLGİLERİ";
             // 
-            // richTextBox1
+            // btnShow
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(7, 52);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(238, 301);
-            this.richTextBox1.TabIndex = 23;
-            this.richTextBox1.Text = "";
+            this.btnShow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShow.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnShow.Location = new System.Drawing.Point(204, 20);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(66, 59);
+            this.btnShow.TabIndex = 23;
+            this.btnShow.Text = "SHOW";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
+            // 
+            // lblKayitGoruntule
+            // 
+            this.lblKayitGoruntule.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblKayitGoruntule.Location = new System.Drawing.Point(7, 99);
+            this.lblKayitGoruntule.Name = "lblKayitGoruntule";
+            this.lblKayitGoruntule.Size = new System.Drawing.Size(263, 254);
+            this.lblKayitGoruntule.TabIndex = 27;
+            this.lblKayitGoruntule.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblKayitSayisi
+            // 
+            this.lblKayitSayisi.AutoSize = true;
+            this.lblKayitSayisi.Location = new System.Drawing.Point(106, 25);
+            this.lblKayitSayisi.Name = "lblKayitSayisi";
+            this.lblKayitSayisi.Size = new System.Drawing.Size(18, 19);
+            this.lblKayitSayisi.TabIndex = 26;
+            this.lblKayitSayisi.Text = "0";
+            // 
+            // nmuKayitNo
+            // 
+            this.nmuKayitNo.Location = new System.Drawing.Point(110, 52);
+            this.nmuKayitNo.Name = "nmuKayitNo";
+            this.nmuKayitNo.Size = new System.Drawing.Size(66, 27);
+            this.nmuKayitNo.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(28, 54);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(76, 19);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Kayıt No:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 25);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(103, 19);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Kayıt Sayısı: ";
             // 
             // groupBox3
             // 
@@ -245,7 +320,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.ClientSize = new System.Drawing.Size(706, 370);
+            this.ClientSize = new System.Drawing.Size(712, 370);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -253,10 +328,13 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmuKayitNo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,8 +357,14 @@
         private System.Windows.Forms.Label lblYas;
         private System.Windows.Forms.RadioButton rdoKadin;
         private System.Windows.Forms.RadioButton rdoErkek;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnTemizle;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblKayitGoruntule;
+        private System.Windows.Forms.Label lblKayitSayisi;
+        private System.Windows.Forms.NumericUpDown nmuKayitNo;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnShow;
     }
 }
 
