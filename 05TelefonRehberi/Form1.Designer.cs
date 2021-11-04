@@ -42,12 +42,14 @@ namespace _05TelefonRehberi
             this.label4 = new System.Windows.Forms.Label();
             this.btnSil = new System.Windows.Forms.Button();
             this.btnDuzenle = new System.Windows.Forms.Button();
+            this.btnIptal = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKisiListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnIptal);
             this.groupBox1.Controls.Add(this.btnKaydet);
             this.groupBox1.Controls.Add(this.mtxTelNo);
             this.groupBox1.Controls.Add(this.txtSoyad);
@@ -62,6 +64,7 @@ namespace _05TelefonRehberi
             this.groupBox1.Size = new System.Drawing.Size(290, 381);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Tag = "1";
             this.groupBox1.Text = "Kayıt Ekle / Düzenle";
             // 
             // btnKaydet
@@ -70,8 +73,8 @@ namespace _05TelefonRehberi
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(99, 33);
-            this.btnKaydet.TabIndex = 6;
-            this.btnKaydet.Text = "Kaydet";
+            this.btnKaydet.TabIndex = 4;
+            this.btnKaydet.Text = "Ekle";
             this.btnKaydet.UseVisualStyleBackColor = true;
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
@@ -82,7 +85,8 @@ namespace _05TelefonRehberi
             this.mtxTelNo.Mask = "(999) 000-0000";
             this.mtxTelNo.Name = "mtxTelNo";
             this.mtxTelNo.Size = new System.Drawing.Size(132, 27);
-            this.mtxTelNo.TabIndex = 5;
+            this.mtxTelNo.TabIndex = 2;
+            this.mtxTelNo.Tag = "3";
             // 
             // txtSoyad
             // 
@@ -90,7 +94,8 @@ namespace _05TelefonRehberi
             this.txtSoyad.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSoyad.Name = "txtSoyad";
             this.txtSoyad.Size = new System.Drawing.Size(132, 27);
-            this.txtSoyad.TabIndex = 4;
+            this.txtSoyad.TabIndex = 1;
+            this.txtSoyad.Tag = "2";
             // 
             // txtAd
             // 
@@ -98,7 +103,7 @@ namespace _05TelefonRehberi
             this.txtAd.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtAd.Name = "txtAd";
             this.txtAd.Size = new System.Drawing.Size(132, 27);
-            this.txtAd.TabIndex = 3;
+            this.txtAd.TabIndex = 0;
             // 
             // label3
             // 
@@ -132,12 +137,16 @@ namespace _05TelefonRehberi
             this.dgvKisiListesi.AllowUserToAddRows = false;
             this.dgvKisiListesi.AllowUserToDeleteRows = false;
             this.dgvKisiListesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKisiListesi.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvKisiListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dgvKisiListesi.Location = new System.Drawing.Point(312, 66);
+            this.dgvKisiListesi.MultiSelect = false;
             this.dgvKisiListesi.Name = "dgvKisiListesi";
             this.dgvKisiListesi.ReadOnly = true;
+            this.dgvKisiListesi.RowHeadersVisible = false;
+            this.dgvKisiListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKisiListesi.Size = new System.Drawing.Size(568, 291);
-            this.dgvKisiListesi.TabIndex = 1;
+            this.dgvKisiListesi.TabIndex = 2;
             // 
             // txtAra
             // 
@@ -145,16 +154,17 @@ namespace _05TelefonRehberi
             this.txtAra.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(132, 27);
-            this.txtAra.TabIndex = 7;
+            this.txtAra.TabIndex = 1;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(714, 37);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 19);
+            this.label4.Size = new System.Drawing.Size(33, 19);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Ad";
+            this.label4.Text = "Ara";
             // 
             // btnSil
             // 
@@ -162,9 +172,10 @@ namespace _05TelefonRehberi
             this.btnSil.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(99, 33);
-            this.btnSil.TabIndex = 7;
+            this.btnSil.TabIndex = 4;
             this.btnSil.Text = "Sil";
             this.btnSil.UseVisualStyleBackColor = true;
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnDuzenle
             // 
@@ -172,9 +183,22 @@ namespace _05TelefonRehberi
             this.btnDuzenle.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.btnDuzenle.Name = "btnDuzenle";
             this.btnDuzenle.Size = new System.Drawing.Size(99, 33);
-            this.btnDuzenle.TabIndex = 8;
+            this.btnDuzenle.TabIndex = 3;
             this.btnDuzenle.Text = "Düzenle";
             this.btnDuzenle.UseVisualStyleBackColor = true;
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
+            // 
+            // btnIptal
+            // 
+            this.btnIptal.Location = new System.Drawing.Point(31, 274);
+            this.btnIptal.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.btnIptal.Name = "btnIptal";
+            this.btnIptal.Size = new System.Drawing.Size(99, 33);
+            this.btnIptal.TabIndex = 5;
+            this.btnIptal.Text = "İptal";
+            this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Visible = false;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // Form1
             // 
@@ -192,6 +216,8 @@ namespace _05TelefonRehberi
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "Form1";
             this.Text = "Telefon Rehberi";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKisiListesi)).EndInit();
@@ -215,6 +241,7 @@ namespace _05TelefonRehberi
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnSil;
         private System.Windows.Forms.Button btnDuzenle;
+        private System.Windows.Forms.Button btnIptal;
     }
 }
 
