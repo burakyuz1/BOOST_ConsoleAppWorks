@@ -34,13 +34,16 @@ namespace _00HayvanlarAlemiInheritance
             {
                 hayvanListesi[i] = new Kus();
                 hayvanListesi[i].HareketEt();
+                Kedi cat = (Kedi)hayvanListesi[i]; // gelen hayvanın kedi olduğunu bildiğim için cast edebilirim. ve onu  cat adında kedi sınıfına alabilirim.
+                cat.Tirman(); // kedinin metodunu kullanabilir. bu da polimorfizmdir.
             }
 
             for (int i = 3; i < 6; i++)
             {
                 hayvanListesi[i] = new Kedi();
                 hayvanListesi[i].HareketEt();
-
+                Kus bird = (Kus)hayvanListesi[i];
+                bird.YuvaYap();
             }
 
 
