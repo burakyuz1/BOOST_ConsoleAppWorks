@@ -1,4 +1,4 @@
-﻿using Newtonsoft.Json;
+﻿//using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -30,7 +30,7 @@ namespace _05TelefonRehberi
             try
             {
                 string okunanVeri = File.ReadAllText("veri.json"); //Veriyi oku
-                kisiler = JsonConvert.DeserializeObject<BindingList<Kisi>>(okunanVeri); //Okuduğun veriyi listeye ekle
+                //kisiler = JsonConvert.DeserializeObject<BindingList<Kisi>>(okunanVeri); //Okuduğun veriyi listeye ekle
             }
             catch (Exception)
             {
@@ -159,7 +159,7 @@ namespace _05TelefonRehberi
 
         private void VerileriKaydet()
         {
-            string json = JsonConvert.SerializeObject(kisiler); // listeyi json' obj içine aktar
+            //string json = JsonConvert.SerializeObject(kisiler); // listeyi json' obj içine aktar
             File.WriteAllText("veri.json", json);// aktardığın json u yazdır (veri.json dosyasının içine)
         }
     }

@@ -1,0 +1,27 @@
+[
+  
+  {
+    "Id": "b3ddadf5-0bd3-41c9-a7e5-a82ff86e667b",
+    "Marka": "ford",
+    "UretimTarihi": "2021-11-04T23:41:54.3403784+03:00",
+    "Renk": 14,
+    "VergiBorcuVarMi": true,
+    "AnlikHiz": 0
+  },
+  {
+    "Id": "1f452a63-2065-4941-9694-60834f7dab41",
+    "Marka": "Fiat",
+    "UretimTarihi": "2021-11-04T23:41:54.3902091+03:00",
+    "Renk": 14,
+    "VergiBorcuVarMi": false,
+    "AnlikHiz": 0
+  },
+  {
+    "Id": "8bcb6298-30d0-478f-b58b-ad76af693fef",
+    "Marka": "toyota",
+    "UretimTarihi": "2021-11-04T23:41:54.3902091+03:00",
+    "Renk": 14,
+    "VergiBorcuVarMi": false,
+    "AnlikHiz": 0
+  }
+]

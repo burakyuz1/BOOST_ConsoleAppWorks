@@ -39,7 +39,7 @@ namespace _08OOP
     public class Kisi
     {
         public string Ad; // Field          //ÖNEMLİ NOT: Giriş yapma nedeniyle field'lar public yapıldı. İleride property dediğimiz
-        public int Yas; // Field            // yapıyı gördüğümüz zaman bunlar private olacak ve erişim kısıtlanacak:
+        public int Yas; // Field            // yapıyı gördüğümüz zaman bunlar private olacak ve dışardan erişim kısıtlanacak:
 
         public string Kunye() // Method
         {

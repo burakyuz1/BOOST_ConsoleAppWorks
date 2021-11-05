@@ -32,7 +32,7 @@ namespace _00HayvanlarAlemiInheritance
 
             for (int i = 0; i < 3; i++)
             {
-                hayvanListesi[i] = new Kus();
+                hayvanListesi[i] = new Kedi();
                 hayvanListesi[i].HareketEt();
                 Kedi cat = (Kedi)hayvanListesi[i]; // gelen hayvanın kedi olduğunu bildiğim için cast edebilirim. ve onu  cat adında kedi sınıfına alabilirim.
                 cat.Tirman(); // kedinin metodunu kullanabilir. bu da polimorfizmdir.
@@ -40,15 +40,11 @@ namespace _00HayvanlarAlemiInheritance
 
             for (int i = 3; i < 6; i++)
             {
-                hayvanListesi[i] = new Kedi();
+                hayvanListesi[i] = new Kus();
                 hayvanListesi[i].HareketEt();
                 Kus bird = (Kus)hayvanListesi[i];
                 bird.YuvaYap();
             }
-
-
-
-
 
             Console.ReadLine();
         }
