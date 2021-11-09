@@ -16,7 +16,7 @@ namespace _02PhoneSoundsApp.Concrete
         }
         public BasePhone(string path)
         {
-            player = new SoundPlayer(soundPath);
+            player = new SoundPlayer(path);
         }
         private SoundPlayer player;
         protected string soundPath = Environment.CurrentDirectory.Replace("\\bin\\Debug", "\\Resources\\default.wav");

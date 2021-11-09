@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace _04AbstractionSekillerDunyasi
 {
-    public abstract class Sekil
+    public abstract class Sekil : ICizilebilir
     {
         public abstract string Ad { get; }
         public int Genislik { get; set; }
