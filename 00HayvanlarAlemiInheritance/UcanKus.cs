@@ -11,6 +11,8 @@ namespace _00HayvanlarAlemiInheritance
         public override void HareketEt()
         {
             Console.WriteLine($"{Tur } kanatları çırparak ucuyor.");
+           
+        
         }
     }
 }
