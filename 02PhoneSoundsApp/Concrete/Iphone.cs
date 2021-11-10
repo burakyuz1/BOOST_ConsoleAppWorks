@@ -9,13 +9,21 @@ namespace _02PhoneSoundsApp.Concrete
 {
     public class Iphone : BasePhone
     {
-        public Iphone(string path)
+        public Iphone()
+        {
+            base.player = new System.Media.SoundPlayer(Environment.CurrentDirectory.Replace("\\bin\\Debug", "\\Resources\\iphone.wav"));
+        }
+        public Iphone(string path) : base(path)
         {
 
         }
 
-        
+        public override void PlaySound()
+        {
+            System.Windows.Forms.MessageBox.Show("iphone ok bastıktan sonra çalmaya başlayacak (OVERRIDE EDİLDİ)");
+            base.PlaySound();
+        }
 
-        
+
     }
 }

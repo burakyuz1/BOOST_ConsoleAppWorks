@@ -18,15 +18,16 @@ namespace _02PhoneSoundsApp.Concrete
         {
             player = new SoundPlayer(path);
         }
-        private SoundPlayer player;
-        protected string soundPath = Environment.CurrentDirectory.Replace("\\bin\\Debug", "\\Resources\\default.wav");
+        protected SoundPlayer player;
+        private string soundPath = Environment.CurrentDirectory.Replace("\\bin\\Debug", "\\Resources\\default.wav");
         public int Id { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public decimal UnitPrice { get; set; }
 
-        public void PlaySound()
+        public virtual void PlaySound()
         {
+            
             player.Play();
         }
 
