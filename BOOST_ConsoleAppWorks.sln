@@ -223,6 +223,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04IEnumerableOrnek1", "04IE
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05IENumerableOrnek2", "05IENumerableOrnek2\05IENumerableOrnek2.csproj", "{486F1BCC-E30A-46F9-8E90-2023C282DB73}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06IEnumerableOrnek3", "06IEnumerableOrnek3\06IEnumerableOrnek3.csproj", "{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -605,6 +607,10 @@ Global
 		{486F1BCC-E30A-46F9-8E90-2023C282DB73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486F1BCC-E30A-46F9-8E90-2023C282DB73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486F1BCC-E30A-46F9-8E90-2023C282DB73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -704,6 +710,7 @@ Global
 		{CC597A76-E66A-439E-A6A8-EE49983FEED2} = {4DDD004E-E28B-4C6A-AE4F-75AFA99920D4}
 		{35A18156-B70D-4D45-8F7F-060F06090A8E} = {4DDD004E-E28B-4C6A-AE4F-75AFA99920D4}
 		{486F1BCC-E30A-46F9-8E90-2023C282DB73} = {4DDD004E-E28B-4C6A-AE4F-75AFA99920D4}
+		{4ACF135C-6D3C-4AC7-9C03-3D4CE1CF170C} = {4DDD004E-E28B-4C6A-AE4F-75AFA99920D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47B4F320-1255-4673-BE86-9320C40C0058}
