@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31829.152
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20211018", "20211018", "{3FB34CB5-28D5-4775-BC51-DFEC74EA85D6}"
 EndProject
@@ -141,7 +141,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00PracticeMethods", "00Prac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01MetotExcercise", "01MetotExcercise\01MetotExcercise.csproj", "{4490C039-01DC-49AF-8941-212EA8A69955}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02ListPractice", "02ListPractice\02ListPractice.csproj", "{E2FA5393-8BF6-4C9F-98E9-3F36D6A0714D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02KisilerKura", "02ListPractice\02KisilerKura.csproj", "{E2FA5393-8BF6-4C9F-98E9-3F36D6A0714D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DictionaryGiris", "03DictionaryGiris\03DictionaryGiris.csproj", "{485FD9B9-9BFF-400E-80BE-D46F06114A62}"
 EndProject
@@ -244,6 +244,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00IEnumerableOrnek", "00IEnumerableOrnek\00IEnumerableOrnek.csproj", "{BCF4B1F8-5276-47FA-980C-B8683E6DA86F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01DelegatesOrnek", "01DelegatesOrnek\01DelegatesOrnek.csproj", "{23C02050-FFEF-4F70-9DA7-63DFC7C1B20B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02DelegelerDevamTeori", "02DelegelerDevamTeori\02DelegelerDevamTeori.csproj", "{B54D60A5-4BFB-4A53-8171-24A5B3033042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03DelegelerZamanlayiciOrnegi", "03DelegelerZamanlayiciOrnegi\03DelegelerZamanlayiciOrnegi.csproj", "{DDEE7E50-24DF-468B-9C36-2F15EF73A099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04IEnumerableGenisletme", "04IEnumerableGenisletme\04IEnumerableGenisletme.csproj", "{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05GenericMethods", "05GenericMethods\05GenericMethods.csproj", "{BBF45DEC-5C94-456E-9019-3E54D7AA3B55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -663,6 +671,22 @@ Global
 		{23C02050-FFEF-4F70-9DA7-63DFC7C1B20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23C02050-FFEF-4F70-9DA7-63DFC7C1B20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23C02050-FFEF-4F70-9DA7-63DFC7C1B20B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54D60A5-4BFB-4A53-8171-24A5B3033042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54D60A5-4BFB-4A53-8171-24A5B3033042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54D60A5-4BFB-4A53-8171-24A5B3033042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54D60A5-4BFB-4A53-8171-24A5B3033042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEE7E50-24DF-468B-9C36-2F15EF73A099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEE7E50-24DF-468B-9C36-2F15EF73A099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEE7E50-24DF-468B-9C36-2F15EF73A099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEE7E50-24DF-468B-9C36-2F15EF73A099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF45DEC-5C94-456E-9019-3E54D7AA3B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF45DEC-5C94-456E-9019-3E54D7AA3B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF45DEC-5C94-456E-9019-3E54D7AA3B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF45DEC-5C94-456E-9019-3E54D7AA3B55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -771,6 +795,10 @@ Global
 		{8B67755C-AA8E-46EC-A799-7DF4E0523425} = {33A20785-2A1A-4B48-8ECE-9D650964C417}
 		{BCF4B1F8-5276-47FA-980C-B8683E6DA86F} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
 		{23C02050-FFEF-4F70-9DA7-63DFC7C1B20B} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
+		{B54D60A5-4BFB-4A53-8171-24A5B3033042} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
+		{DDEE7E50-24DF-468B-9C36-2F15EF73A099} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
+		{A9959E1D-35C2-4DE0-8DE7-B4FF56DBB56C} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
+		{BBF45DEC-5C94-456E-9019-3E54D7AA3B55} = {781C294D-9049-417B-BA5D-6FB566E4AF66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {47B4F320-1255-4673-BE86-9320C40C0058}
