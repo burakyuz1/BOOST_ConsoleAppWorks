@@ -14,7 +14,7 @@ namespace _04IEnumerableGenisletme
 
             adlar.VirgulleYazdir();
 
-            int[] sayilar = new int[] { 1, 2, 3, 4, 5, 6,35,42,53 };
+            int[] sayilar = new int[] { 1, 2, 3, 4, 5, 6, 35, 42, 53 };
             sayilar.VirgulleYazdir<int>(); //program generic'i biliyor zaten. o yüzden yazmasak da olur BKNZ: bir alt satır
             sayilar.VirgulleYazdir();
 
@@ -22,8 +22,10 @@ namespace _04IEnumerableGenisletme
             sayilar.KosulluYazdir(x => x % 2 == 0); //ciftleri yan yana yazdır
             Console.WriteLine("***");
             sayilar.KosulluYazdir(x => x > 10); //10'dan büyükleri yan yana yazdır.
+          
+            sayilar.KosulluYazdir(sayi => sayi % 2 == 1);
 
-           ;
+
             Console.ReadLine();
         }
     }

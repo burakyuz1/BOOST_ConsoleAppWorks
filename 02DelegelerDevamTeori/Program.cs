@@ -46,6 +46,8 @@ namespace _02DelegelerDevamTeori
                 return number1 % 2 == 0;
             };
 
+            Process3 ciftler2 = number13 => number13 % 2 == 0;
+
             for (int i = 0; i < 21; i++)
             {
                 if (!ciftler(i))
