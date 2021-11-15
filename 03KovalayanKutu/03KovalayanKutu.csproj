@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B150B10D-3F23-4710-B7D8-91204A3E1404}</ProjectGuid>
+    <ProjectGuid>{D5B1D5AE-A8B1-4BCC-8864-9997E6C9248A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_01KisiRehberi</RootNamespace>
-    <AssemblyName>01KisiRehberi</AssemblyName>
+    <RootNamespace>_03KovalayanKutu</RootNamespace>
+    <AssemblyName>03KovalayanKutu</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

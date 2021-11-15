@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B150B10D-3F23-4710-B7D8-91204A3E1404}</ProjectGuid>
+    <ProjectGuid>{5A541145-780F-4E4D-B767-1B8A8304ADE2}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_01KisiRehberi</RootNamespace>
-    <AssemblyName>01KisiRehberi</AssemblyName>
+    <RootNamespace>_02EventGiris</RootNamespace>
+    <AssemblyName>02EventGiris</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
