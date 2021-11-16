@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B150B10D-3F23-4710-B7D8-91204A3E1404}</ProjectGuid>
+    <ProjectGuid>{97E78EF5-83A2-41BE-9144-9DD94D19457D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>_01KisiRehberi</RootNamespace>
-    <AssemblyName>01KisiRehberi</AssemblyName>
+    <RootNamespace>_00AracCezaApp</RootNamespace>
+    <AssemblyName>00AracCezaApp</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,26 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arac.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmKisiEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmKisiEkle.Designer.cs">
-      <DependentUpon>frmKisiEkle.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Kisi.cs" />
+    <Compile Include="HizGectiEventArgs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmKisiEkle.resx">
-      <DependentUpon>frmKisiEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

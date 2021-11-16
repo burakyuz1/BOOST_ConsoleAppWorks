@@ -159,7 +159,7 @@ namespace _05TelefonRehberi
 
         private void VerileriKaydet()
         {
-            //string json = JsonConvert.SerializeObject(kisiler); // listeyi json' obj içine aktar
+            string json = JsonConvert.SerializeObject(kisiler); // listeyi json' obj içine aktar
             File.WriteAllText("veri.json", json);// aktardığın json u yazdır (veri.json dosyasının içine)
         }
     }

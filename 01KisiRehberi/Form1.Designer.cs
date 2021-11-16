@@ -43,19 +43,20 @@
             this.btnYeniKisi.TabIndex = 0;
             this.btnYeniKisi.Text = "Kişi Ekle";
             this.btnYeniKisi.UseVisualStyleBackColor = true;
+            this.btnYeniKisi.Click += new System.EventHandler(this.btnYeniKisi_Click);
             // 
             // dgwKisiListesi
             // 
             this.dgwKisiListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgwKisiListesi.Location = new System.Drawing.Point(13, 65);
             this.dgwKisiListesi.Name = "dgwKisiListesi";
-            this.dgwKisiListesi.Size = new System.Drawing.Size(775, 425);
+            this.dgwKisiListesi.Size = new System.Drawing.Size(284, 425);
             this.dgwKisiListesi.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(664, 6);
+            this.label1.Location = new System.Drawing.Point(173, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 2;
@@ -71,16 +72,17 @@
             "Soyada göre tersten sırala",
             "Yaşa göre sırala",
             "Yaşa göre tersten sırala"});
-            this.cmbKriter.Location = new System.Drawing.Point(667, 25);
+            this.cmbKriter.Location = new System.Drawing.Point(176, 25);
             this.cmbKriter.Name = "cmbKriter";
             this.cmbKriter.Size = new System.Drawing.Size(121, 21);
             this.cmbKriter.TabIndex = 3;
+            this.cmbKriter.SelectedIndexChanged += new System.EventHandler(this.cmbKriter_SelectedIndexChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 502);
+            this.ClientSize = new System.Drawing.Size(319, 502);
             this.Controls.Add(this.cmbKriter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgwKisiListesi);
