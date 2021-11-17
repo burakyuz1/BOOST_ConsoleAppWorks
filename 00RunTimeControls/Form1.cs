@@ -48,6 +48,7 @@ namespace _00RunTimeControls
 
         private void Pcb_Click(object sender, EventArgs e)
         {
+            //
             PictureBox pcb = (PictureBox)sender;
             Controls.Remove(pcb);
             lbl.Text = ButtonVePictureAdetGetir().ToString();
